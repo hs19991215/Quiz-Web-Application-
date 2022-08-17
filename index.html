@@ -1,0 +1,187 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Web Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="main-container">
+        <div class="nav-bar">
+            <h4>Quiz Contest</h4>
+        </div>
+        <div class="sub-container">
+            <div class="container">
+                <!-- details -->
+                <div id="details">
+                 <div class="header"><h3>Personal Data</h3></div>
+                 <div class="name">
+                    <label for="#">*Name:</label>
+                    <input id="inp1"  type="text" placeholder="Enter your name" required>
+                 </div>    
+                <div id="msg" style="color: red; font-size: 16px;"></div>
+                 <div class="Email">
+                    <label for="#">*Email.ID:</label>
+                    <input id="inp2"  type="email" placeholder="Enter your Email" required>
+                 </div> 
+                
+                
+                </div>
+               <!-- question section -->
+
+               <form  class="quiz-form">
+
+                 <!-- question-1 -->
+                <div class="quiz-form__quiz">
+                    <p class="quiz-form__question">
+                      1.If you type the following code in the console window, what result will you get?
+                      3 > 2 > 1 === false;
+                    </p>
+                    <label class="quiz-form__ans" for="q11">
+                      <input type="radio" name="q1" id="q11" value="A" checked />
+                      <span class="design"></span>
+                      <span class="text"> True</span>
+                    </label>
+                    <label class="quiz-form__ans" for="#">
+                      <input type="radio" name="q1" id="q12" value="B" />
+                      <span class="design"></span>
+                      <span class="text">False</span>
+                    </label>
+                    <label class="quiz-form__ans" for="#">
+                      <input type="radio" name="q1" id="q13" value="C" />
+                      <span class="design"></span>
+                      <span class="text">undefined</span>
+                    </label>
+                    <label class="quiz-form__ans" for="#">
+                      <input type="radio" name="q1" id="q14" value="D" />
+                      <span class="design"></span>
+                      <span class="text">Syntax Error</span>
+                    </label>
+                  </div>
+                  <br>
+
+                   <!-- question-2 -->
+                  <div class="quiz-form__quiz">
+                    <p class="quiz-form__question">
+                      2. JavaScript is a ___ -side programming language.
+                    </p>
+                    <label class="quiz-form__ans" for="#">
+                      <input type="radio" name="q2" id="q21" value="A" checked />
+                      <span class="design"></span>
+                      <span class="text">Client</span>
+                    </label>
+                    <label class="quiz-form__ans" for="#">
+                      <input type="radio" name="q2" id="q22" value="B" />
+                      <span class="design"></span>
+                      <span class="text"> Server</span>
+                    </label>
+                    <label class="quiz-form__ans" for="#">
+                      <input type="radio" name="q2" id="q23" value="C" />
+                      <span class="design"></span>
+                      <span class="text"> Both</span>
+                    </label>
+                    <label class="quiz-form__ans" for="#">
+                      <input type="radio" name="q2" id="q24" value="D" />
+                      <span class="design"></span>
+                      <span class="text"> None</span>
+                    </label>
+                  </div>
+                  <br>
+                  <!-- question-3 -->
+                  <div class="quiz-form__quiz">
+                    <p class="quiz-form__question">
+                      3. Which of the following will write the message “Hello DataFlair!” in an alert box?
+                    </p>
+                    <label class="quiz-form__ans" for="#">
+                      <input type="radio" name="q3" id="q31" value="A" checked />
+                      <span class="design"></span>
+                      <span class="text">alertBox(“Hello DataFlair!”);</span>
+                    </label>
+                    <label class="quiz-form__ans" for="#">
+                      <input type="radio" name="q3" id="q32" value="B" />
+                      <span class="design"></span>
+                      <span class="text">alert(Hello DataFlair!);</span>
+                    </label>
+                    <label class="quiz-form__ans" for="#">
+                      <input type="radio" name="q3" id="q33" value="C" />
+                      <span class="design"></span>
+                      <span class="text">msgAlert(“Hello DataFlair!”);</span>
+                    </label>
+                    <label class="quiz-form__ans" for="#">
+                      <input type="radio" name="q3" id="q34" value="D" />
+                      <span class="design"></span>
+                      <span class="text"> alert(“Hello DataFlair!”);</span>
+                    </label>
+                  </div>
+                  <br>
+                 <!-- question-4 -->
+
+                 <div class="quiz-form__quiz">
+                    <p class="quiz-form__question">
+                      4.How do you find the minimum of x and y using JavaScript?
+                    </p>
+                    <label class="quiz-form__ans" for="#">
+                      <input type="radio" name="q4" id="q41" value="A" checked />
+                      <span class="design"></span>
+                      <span class="text">min(x,y);</span>
+                    </label>
+                    <label class="quiz-form__ans" for="#">
+                      <input type="radio" name="q4" id="q42" value="B" />
+                      <span class="design"></span>
+                      <span class="text">Math.min(x,y)</span>
+                    </label>
+                    <label class="quiz-form__ans" for="#">
+                      <input type="radio" name="q4" id="q43" value="C" />
+                      <span class="design"></span>
+                      <span class="text">Math.min(xy)</span>
+                    </label>
+                    <label class="quiz-form__ans" for="#">
+                      <input type="radio" name="q4" id="q44" value="D" />
+                      <span class="design"></span>
+                      <span class="text">min(xy);</span>
+                    </label>
+                  </div>
+                  <br>
+                 
+                <!-- question-5 -->
+
+                 <div class="quiz-form__quiz">
+                    <p class="quiz-form__question">
+                      5. Which of the following statements will throw an error?
+                    </p>
+                    <label class="quiz-form__ans" for="#">
+                      <input type="radio" name="q5" id="q51" value="A" checked />
+                      <span class="design"></span>
+                      <span class="text"> var fun = function bar( ){ }</span>
+                    </label>
+                    <label class="quiz-form__ans" for="#">
+                      <input type="radio" name="q5" id="q52" value="B" />
+                      <span class="design"></span>
+                      <span class="text">var fun = function bar{ }</span>
+                    </label>
+                    <label class="quiz-form__ans" for="#">
+                      <input type="radio" name="q5" id="q53" value="C" />
+                      <span class="design"></span>
+                      <span class="text"> Both A & B</span>
+                    </label>
+                    <label class="quiz-form__ans" for="#">
+                      <input type="radio" name="q5" id="q51" value="D" />
+                      <span class="design"></span>
+                      <span class="text">min(xy);</span>
+                    </label>
+                  </div>
+                  <br>
+               </form>
+
+            </div>
+
+
+        </div>
+        <div class="btn1">
+            <button id="btn1" onclick="submitQuiz()" type="submit" >Submit Quiz</button>
+            </div>
+     </div>    
+    <script src="index.js"></script>
+</body>
+</html>
